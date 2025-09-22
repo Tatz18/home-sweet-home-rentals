@@ -59,11 +59,12 @@ export default {
         },
       },
       backgroundImage: {
-        'gradient-hero': 'var(--gradient-hero)',
-        'gradient-brand': 'var(--gradient-brand)',
+        'gradient-orange': 'var(--gradient-orange)',
+        'gradient-dark': 'var(--gradient-dark)',
       },
       boxShadow: {
-        'glow': 'var(--glow-green)',
+        'card': 'var(--shadow-card)',
+        'hover': 'var(--shadow-hover)',
       },
       transitionTimingFunction: {
         'smooth': 'var(--transition-smooth)',
