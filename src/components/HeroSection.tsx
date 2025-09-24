@@ -18,8 +18,8 @@ const HeroSection = () => {
               
               <div className="bg-card rounded-3xl p-8 shadow-card max-w-lg">
                 <p className="text-lg text-muted-foreground mb-6">
-                  Discover curated spaces that transcend time and space. Discover the 
-                  artistry of moments captured in motion through our premium property collection.
+                  India's smartest renting ecosystem platform connecting tenants, landlords, 
+                  and brokers in one seamless app with transparent processes and hidden monetization.
                 </p>
                 
                 <div className="flex items-center gap-4 text-sm">
@@ -43,10 +43,10 @@ const HeroSection = () => {
             
             {/* Stats Card 1 */}
             <div className="bg-card rounded-3xl p-6 shadow-card">
-              <div className="text-4xl font-bold text-foreground mb-2">*250k</div>
+              <div className="text-4xl font-bold text-foreground mb-2">500+</div>
               <p className="text-sm text-muted-foreground">
-                Properties that transform a vision
-                and get lasting impression
+                Verified properties with transparent 
+                rental processes nationwide
               </p>
             </div>
 
@@ -66,10 +66,10 @@ const HeroSection = () => {
 
             {/* Stats Card 2 */}
             <div className="bg-card rounded-3xl p-6 shadow-card">
-              <div className="text-4xl font-bold text-foreground mb-2">*800k</div>
+              <div className="text-4xl font-bold text-foreground mb-2">98%</div>
               <p className="text-sm text-muted-foreground">
-                Hours invested designing
-                everything that captivates viewers
+                Client satisfaction with our 
+                role-based dashboard system
               </p>
             </div>
 
@@ -93,10 +93,10 @@ const HeroSection = () => {
 
             {/* About Text Card */}
             <div className="col-span-2 bg-foreground rounded-3xl p-8 shadow-card text-white">
-              <h3 className="text-2xl font-bold mb-4">about • about • about • about</h3>
+              <h3 className="text-2xl font-bold mb-4">ecosystem • platform • smart • renting</h3>
               <p className="text-white/80 text-lg">
-                Transforming property discovery into an art form. Every space tells a story, 
-                every location holds potential.
+                Revolutionary rental ecosystem where transparency meets efficiency. One app, 
+                multiple roles, endless possibilities for property connections.
               </p>
             </div>
 

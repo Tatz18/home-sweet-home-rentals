@@ -1,30 +1,30 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Calendar, MessageCircle, FileCheck, Key } from "lucide-react";
+import { ArrowRight, Calendar, Users, FileText, Zap, Shield } from "lucide-react";
 
 const ProcessSection = () => {
   const steps = [
     {
-      icon: <MessageCircle className="w-8 h-8 text-white" />,
-      title: "Initial Consultation",
-      description: "We begin with understanding your vision, requirements, and aspirations for the perfect property.",
+      icon: <Users className="w-8 h-8 text-white" />,
+      title: "Employee Onboarding",
+      description: "Our trained employees onboard tenants and landlords directly or through channel partners into the ecosystem.",
       featured: true
     },
     {
-      icon: <Calendar className="w-8 h-8 text-primary" />,
-      title: "Curated Selection",
-      description: "Our experts handpick properties that align with your criteria and schedule private viewings.",
+      icon: <FileText className="w-8 h-8 text-primary" />,
+      title: "Smart Dashboard Access",
+      description: "Role-based dashboards for tenants, landlords, brokers, and employees with personalized features.",
       featured: false
     },
     {
-      icon: <FileCheck className="w-8 h-8 text-primary" />,
-      title: "Seamless Documentation", 
-      description: "We handle all paperwork and negotiations to ensure transparency and the best possible terms.",
+      icon: <Shield className="w-8 h-8 text-primary" />,
+      title: "Legal Facilitation", 
+      description: "RERA compliant service facilitation with transparent agreements ensuring fair dealings for all.",
       featured: false
     },
     {
-      icon: <Key className="w-8 h-8 text-white" />,
-      title: "Smooth Handover",
-      description: "Professional property handover with ongoing support for your complete satisfaction.",
+      icon: <Zap className="w-8 h-8 text-white" />,
+      title: "Ecosystem Benefits",
+      description: "Ongoing revenue sharing, rewards system, and sustainable commission structure for all participants.",
       featured: true
     }
   ];
@@ -36,15 +36,15 @@ const ProcessSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl lg:text-6xl font-black text-foreground leading-tight mb-6">
-            our<br />
+            ecosystem<br />
             <span className="text-transparent bg-clip-text bg-gradient-orange">workflow</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-            A refined process that transforms property discovery into an exceptional experience.
+            Experience our revolutionary role-based dashboard system where every participant benefits through our intelligent ecosystem platform.
           </p>
           <Button variant="portfolio" size="lg">
-            <Calendar className="w-5 h-5 mr-2" />
-            Schedule a consultation
+            <Users className="w-5 h-5 mr-2" />
+            Join Ecosystem
           </Button>
         </div>
 
@@ -115,17 +115,17 @@ const ProcessSection = () => {
         {/* Bottom CTA Section */}
         <div className="mt-20 bg-secondary/50 rounded-3xl p-12 text-center">
           <h3 className="text-3xl font-bold text-foreground mb-4">
-            Ready to Begin Your Property Journey?
+            Ready to Join Our Smart Renting Ecosystem?
           </h3>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join hundreds of satisfied clients who have found their perfect spaces through our expertly curated process.
+            Be part of India's first role-based rental platform where transparency meets efficiency in property dealings.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="portfolio" size="lg">
-              Start Your Search
+              Join as Tenant
             </Button>
             <Button variant="outline" size="lg">
-              View Portfolio
+              Become Partner
             </Button>
           </div>
         </div>
