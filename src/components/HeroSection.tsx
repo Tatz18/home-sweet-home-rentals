@@ -4,20 +4,20 @@ import heroCharacter from "@/assets/hero-character.png";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen bg-background pt-20 pb-16">
-      <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-12 gap-8 min-h-[80vh]">
+    <section className="min-h-screen bg-background pt-24 md:pt-20 pb-16">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="grid lg:grid-cols-12 gap-6 md:gap-8 min-h-[80vh]">
           
           {/* Main Title Card */}
           <div className="lg:col-span-7 flex flex-col justify-center">
-            <div className="space-y-8">
-              <h1 className="text-6xl lg:text-8xl font-black text-foreground leading-none">
+            <div className="space-y-6 md:space-y-8">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black text-foreground leading-none">
                 property<br />
                 <span className="text-transparent bg-clip-text bg-gradient-orange">portfolio</span>
               </h1>
               
-              <div className="bg-card rounded-3xl p-8 shadow-card max-w-lg">
-                <p className="text-lg text-muted-foreground mb-6">
+              <div className="bg-card rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-card max-w-lg">
+                <p className="text-base md:text-lg text-muted-foreground mb-6">
                   India's smartest renting ecosystem platform connecting tenants, landlords, 
                   and brokers in one seamless app with transparent processes and hidden monetization.
                 </p>
@@ -32,69 +32,69 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              <Button variant="portfolio" size="lg" className="w-fit">
+              <Button variant="portfolio" size="lg" className="w-full sm:w-fit">
                 Explore Properties <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </div>
           </div>
 
           {/* Stats & Image Cards */}
-          <div className="lg:col-span-5 grid grid-cols-2 gap-6">
+          <div className="lg:col-span-5 grid grid-cols-2 gap-4 md:gap-6">
             
             {/* Stats Card 1 */}
-            <div className="bg-card rounded-3xl p-6 shadow-card">
-              <div className="text-4xl font-bold text-foreground mb-2">500+</div>
-              <p className="text-sm text-muted-foreground">
+            <div className="bg-card rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-card">
+              <div className="text-2xl md:text-4xl font-bold text-foreground mb-2">500+</div>
+              <p className="text-xs md:text-sm text-muted-foreground">
                 Verified properties with transparent 
                 rental processes nationwide
               </p>
             </div>
 
             {/* Main Image Card */}
-            <div className="row-span-2 bg-gradient-orange rounded-3xl p-6 shadow-card relative overflow-hidden">
+            <div className="row-span-2 bg-gradient-orange rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-card relative overflow-hidden">
               <img 
                 src={heroCharacter} 
                 alt="Property specialist" 
-                className="w-full h-full object-cover rounded-2xl"
+                className="w-full h-full object-cover rounded-xl md:rounded-2xl"
               />
-              <div className="absolute top-6 left-6">
-                <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
-                  <Home className="w-4 h-4 text-white" />
+              <div className="absolute top-4 left-4 md:top-6 md:left-6">
+                <div className="w-6 h-6 md:w-8 md:h-8 bg-white/20 rounded-full flex items-center justify-center">
+                  <Home className="w-3 h-3 md:w-4 md:h-4 text-white" />
                 </div>
               </div>
             </div>
 
             {/* Stats Card 2 */}
-            <div className="bg-card rounded-3xl p-6 shadow-card">
-              <div className="text-4xl font-bold text-foreground mb-2">98%</div>
-              <p className="text-sm text-muted-foreground">
+            <div className="bg-card rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-card">
+              <div className="text-2xl md:text-4xl font-bold text-foreground mb-2">98%</div>
+              <p className="text-xs md:text-sm text-muted-foreground">
                 Client satisfaction with our 
                 role-based dashboard system
               </p>
             </div>
 
             {/* Icons Card */}
-            <div className="bg-gradient-orange rounded-3xl p-6 shadow-card">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white/20 rounded-2xl p-4 flex items-center justify-center">
-                  <Building className="w-8 h-8 text-white" />
+            <div className="bg-gradient-orange rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-card">
+              <div className="grid grid-cols-2 gap-3 md:gap-4">
+                <div className="bg-white/20 rounded-xl md:rounded-2xl p-3 md:p-4 flex items-center justify-center">
+                  <Building className="w-6 h-6 md:w-8 md:h-8 text-white" />
                 </div>
-                <div className="bg-white/20 rounded-2xl p-4 flex items-center justify-center">
-                  <Store className="w-8 h-8 text-white" />
+                <div className="bg-white/20 rounded-xl md:rounded-2xl p-3 md:p-4 flex items-center justify-center">
+                  <Store className="w-6 h-6 md:w-8 md:h-8 text-white" />
                 </div>
-                <div className="bg-white/20 rounded-2xl p-4 flex items-center justify-center">
-                  <Home className="w-8 h-8 text-white" />
+                <div className="bg-white/20 rounded-xl md:rounded-2xl p-3 md:p-4 flex items-center justify-center">
+                  <Home className="w-6 h-6 md:w-8 md:h-8 text-white" />
                 </div>
-                <div className="bg-white/20 rounded-2xl p-4 flex items-center justify-center">
-                  <div className="w-8 h-8 rounded-full bg-white/40"></div>
+                <div className="bg-white/20 rounded-xl md:rounded-2xl p-3 md:p-4 flex items-center justify-center">
+                  <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-white/40"></div>
                 </div>
               </div>
             </div>
 
             {/* About Text Card */}
-            <div className="col-span-2 bg-foreground rounded-3xl p-8 shadow-card text-white">
-              <h3 className="text-2xl font-bold mb-4">ecosystem • platform • smart • renting</h3>
-              <p className="text-white/80 text-lg">
+            <div className="col-span-2 bg-foreground rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-card text-white">
+              <h3 className="text-lg md:text-2xl font-bold mb-3 md:mb-4">ecosystem • platform • smart • renting</h3>
+              <p className="text-white/80 text-sm md:text-lg">
                 Revolutionary rental ecosystem where transparency meets efficiency. One app, 
                 multiple roles, endless possibilities for property connections.
               </p>
