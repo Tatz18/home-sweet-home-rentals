@@ -14,11 +14,11 @@ const PropertyTypes = () => {
         <div className="grid lg:grid-cols-12 gap-6 md:gap-8 mb-12 md:mb-16">
           <div className="lg:col-span-8">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-foreground leading-tight mb-4 md:mb-6">
-              property<br />
-              <span className="text-transparent bg-clip-text bg-gradient-orange">exhibitions</span>
+              commercial<br />
+              <span className="text-transparent bg-clip-text bg-gradient-orange">properties</span>
             </h2>
             <p className="text-base md:text-xl text-muted-foreground">
-              Curated spaces that define modern living and working environments.
+              Premium commercial spaces strategically located for business success.
             </p>
           </div>
           <div className="lg:col-span-4 flex items-end justify-start lg:justify-end">
@@ -69,20 +69,20 @@ const PropertyTypes = () => {
           {/* Grid of Smaller Cards */}
           <div className="grid grid-cols-1 gap-6 md:gap-8">
             
-            {/* Apartments */}
+            {/* Retail Spaces */}
             <div className="group bg-card rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-1">
               <div className="flex flex-col sm:flex-row gap-4 md:gap-6">
                 <div className="w-full sm:w-24 md:w-32 h-24 md:h-32 rounded-xl md:rounded-2xl overflow-hidden flex-shrink-0">
                   <img 
                     src={apartment} 
-                    alt="Luxury Apartments"
+                    alt="Retail Spaces"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-lg md:text-xl font-bold text-foreground mb-2">Luxury Apartments</h3>
+                  <h3 className="text-lg md:text-xl font-bold text-foreground mb-2">Retail Spaces</h3>
                   <p className="text-muted-foreground text-xs md:text-sm mb-3 md:mb-4">
-                    Premium residential spaces with modern amenities and stunning city views.
+                    High-footfall retail locations perfect for establishing your brand presence.
                   </p>
                   <Button variant="link" className="p-0 h-auto group">
                     View Collection <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
@@ -91,20 +91,20 @@ const PropertyTypes = () => {
               </div>
             </div>
 
-            {/* Commercial Spaces */}
+            {/* Warehouses */}
             <div className="group bg-gradient-orange rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-1 text-white">
               <div className="flex flex-col sm:flex-row gap-4 md:gap-6">
                 <div className="w-full sm:w-24 md:w-32 h-24 md:h-32 rounded-xl md:rounded-2xl overflow-hidden flex-shrink-0">
                   <img 
                     src={commercialSpace} 
-                    alt="Commercial Spaces"
+                    alt="Warehouse Spaces"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-lg md:text-xl font-bold mb-2">Commercial Spaces</h3>
+                  <h3 className="text-lg md:text-xl font-bold mb-2">Warehouse & Industrial</h3>
                   <p className="text-white/90 text-xs md:text-sm mb-3 md:mb-4">
-                    Prime retail locations perfect for establishing your business presence.
+                    Large-scale industrial spaces with logistics connectivity and modern facilities.
                   </p>
                   <Button variant="link" className="p-0 h-auto text-white hover:text-white/80 group">
                     Discover More <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
@@ -113,23 +113,23 @@ const PropertyTypes = () => {
               </div>
             </div>
 
-            {/* Houses */}
+            {/* Business Centers */}
             <div className="group bg-card rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-card hover:shadow-hover transition-all duration-300 hover:-translate-y-1">
               <div className="flex flex-col sm:flex-row gap-4 md:gap-6">
                 <div className="w-full sm:w-24 md:w-32 h-24 md:h-32 rounded-xl md:rounded-2xl overflow-hidden flex-shrink-0">
                   <img 
                     src={house} 
-                    alt="Family Houses"
+                    alt="Business Centers"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-lg md:text-xl font-bold text-foreground mb-2">Family Houses</h3>
+                  <h3 className="text-lg md:text-xl font-bold text-foreground mb-2">Business Centers</h3>
                   <p className="text-muted-foreground text-xs md:text-sm mb-3 md:mb-4">
-                    Beautiful family homes in desirable neighborhoods with excellent amenities.
+                    Serviced offices and coworking spaces in premium locations with full amenities.
                   </p>
                   <Button variant="link" className="p-0 h-auto group">
-                    Browse Homes <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                    Browse Centers <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </div>
               </div>
@@ -140,9 +140,9 @@ const PropertyTypes = () => {
 
         {/* Bottom Exhibition Banner */}
         <div className="mt-12 md:mt-16 bg-foreground rounded-2xl md:rounded-3xl p-8 md:p-12 text-center text-white">
-          <h3 className="text-xl md:text-3xl font-bold mb-3 md:mb-4">property • exhibitions • showcase</h3>
+          <h3 className="text-xl md:text-3xl font-bold mb-3 md:mb-4">commercial • property • showcase</h3>
           <p className="text-white/80 text-sm md:text-lg mb-6 md:mb-8 max-w-2xl mx-auto">
-            Join us for exclusive property showcases where premium spaces meet discerning clients.
+            Join us for exclusive commercial property tours where prime business spaces meet forward-thinking companies.
           </p>
           <div className="grid sm:grid-cols-2 gap-4 md:gap-6 max-w-md mx-auto">
             <div className="bg-white/10 rounded-xl md:rounded-2xl p-3 md:p-4">

@@ -4,10 +4,10 @@ import { Building2, Users, Trophy, Shield } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { number: "10K+", label: "Properties Listed" },
-    { number: "500+", label: "Happy Clients" },
+    { number: "500+", label: "Commercial Properties" },
+    { number: "300+", label: "Corporate Clients" },
     { number: "50+", label: "Cities Covered" },
-    { number: "5", label: "Years Experience" },
+    { number: "8", label: "Years Experience" },
   ];
 
   const team = [
@@ -40,8 +40,8 @@ const About = () => {
               About Suitespott
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              We're revolutionizing the rental industry with smart technology, transparent processes, 
-              and personalized service. Our mission is to make finding your perfect space effortless.
+              We're revolutionizing commercial real estate with professional service, strategic locations, 
+              and transparent processes. Our mission is to help businesses find the perfect space to grow.
             </p>
           </div>
         </div>
@@ -72,8 +72,8 @@ const About = () => {
             <div>
               <h2 className="text-4xl font-bold mb-6">Our Mission</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                To create a seamless, transparent, and efficient rental ecosystem that connects 
-                property owners with tenants through innovative technology and exceptional service.
+                To provide businesses with prime commercial spaces through professional service, 
+                strategic insights, and transparent processes that enable business growth and success.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex items-center space-x-3">
@@ -97,9 +97,9 @@ const About = () => {
             <div className="bg-gradient-to-br from-primary/10 to-orange-500/10 rounded-3xl p-8">
               <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
               <p className="text-muted-foreground leading-relaxed">
-                To become the most trusted and innovative rental platform globally, 
-                setting new standards for transparency, efficiency, and customer satisfaction 
-                in the property rental industry.
+                To become India's most trusted commercial real estate platform, 
+                setting new standards for professionalism, strategic advisory, and client satisfaction 
+                in the commercial property sector.
               </p>
             </div>
           </div>
@@ -112,7 +112,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Meet Our Team</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Passionate professionals dedicated to transforming your rental experience
+              Experienced professionals dedicated to finding your perfect commercial space
             </p>
           </div>
           

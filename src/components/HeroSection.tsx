@@ -12,14 +12,14 @@ const HeroSection = () => {
           <div className="lg:col-span-7 flex flex-col justify-center">
             <div className="space-y-6 md:space-y-8">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black text-foreground leading-none">
-                property<br />
-                <span className="text-transparent bg-clip-text bg-gradient-orange">portfolio</span>
+                commercial<br />
+                <span className="text-transparent bg-clip-text bg-gradient-orange">real estate</span>
               </h1>
               
               <div className="bg-card rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-card max-w-lg">
                 <p className="text-base md:text-lg text-muted-foreground mb-6">
-                  India's smartest renting ecosystem platform connecting tenants, landlords, 
-                  and brokers in one seamless app with transparent processes and hidden monetization.
+                  India's premier commercial property platform connecting businesses with prime office spaces, 
+                  retail locations, and industrial properties through transparent, professional service.
                 </p>
                 
                 <div className="flex items-center gap-4 text-sm">
@@ -45,8 +45,8 @@ const HeroSection = () => {
             <div className="bg-card rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-card">
               <div className="text-2xl md:text-4xl font-bold text-foreground mb-2">500+</div>
               <p className="text-xs md:text-sm text-muted-foreground">
-                Verified properties with transparent 
-                rental processes nationwide
+                Commercial properties across 
+                prime business locations
               </p>
             </div>
 
@@ -68,8 +68,8 @@ const HeroSection = () => {
             <div className="bg-card rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-card">
               <div className="text-2xl md:text-4xl font-bold text-foreground mb-2">98%</div>
               <p className="text-xs md:text-sm text-muted-foreground">
-                Client satisfaction with our 
-                role-based dashboard system
+                Corporate client satisfaction 
+                with our professional service
               </p>
             </div>
 
@@ -93,10 +93,10 @@ const HeroSection = () => {
 
             {/* About Text Card */}
             <div className="col-span-2 bg-foreground rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-card text-white">
-              <h3 className="text-lg md:text-2xl font-bold mb-3 md:mb-4">ecosystem • platform • smart • renting</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-3 md:mb-4">commercial • office • retail • industrial</h3>
               <p className="text-white/80 text-sm md:text-lg">
-                Revolutionary rental ecosystem where transparency meets efficiency. One app, 
-                multiple roles, endless possibilities for property connections.
+                Premier commercial real estate solutions where business needs meet prime locations. 
+                Professional service, strategic spaces, endless growth opportunities.
               </p>
             </div>
 

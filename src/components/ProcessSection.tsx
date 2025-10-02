@@ -5,26 +5,26 @@ const ProcessSection = () => {
   const steps = [
     {
       icon: <Users className="w-8 h-8 text-white" />,
-      title: "Employee Onboarding",
-      description: "Our trained employees onboard tenants and landlords directly or through channel partners into the ecosystem.",
+      title: "Business Requirements",
+      description: "Understanding your business needs, space requirements, location preferences, and budget considerations.",
       featured: true
     },
     {
       icon: <FileText className="w-8 h-8 text-primary" />,
-      title: "Smart Dashboard Access",
-      description: "Role-based dashboards for tenants, landlords, brokers, and employees with personalized features.",
+      title: "Property Selection",
+      description: "Curated shortlist of commercial properties matching your criteria with detailed specifications and location analysis.",
       featured: false
     },
     {
       icon: <Shield className="w-8 h-8 text-primary" />,
-      title: "Legal Facilitation", 
-      description: "RERA compliant service facilitation with transparent agreements ensuring fair dealings for all.",
+      title: "Site Visits & Negotiation", 
+      description: "Professional property tours with expert negotiation support to secure the best terms for your business.",
       featured: false
     },
     {
       icon: <Zap className="w-8 h-8 text-white" />,
-      title: "Ecosystem Benefits",
-      description: "Ongoing revenue sharing, rewards system, and sustainable commission structure for all participants.",
+      title: "Documentation & Handover",
+      description: "Complete legal documentation, RERA compliance, and smooth property handover with ongoing support.",
       featured: true
     }
   ];
@@ -36,15 +36,15 @@ const ProcessSection = () => {
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-foreground leading-tight mb-4 md:mb-6">
-            ecosystem<br />
-            <span className="text-transparent bg-clip-text bg-gradient-orange">workflow</span>
+            leasing<br />
+            <span className="text-transparent bg-clip-text bg-gradient-orange">process</span>
           </h2>
           <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 md:mb-8">
-            Experience our revolutionary role-based dashboard system where every participant benefits through our intelligent ecosystem platform.
+            Streamlined commercial leasing process designed for efficiency, transparency, and your business success.
           </p>
           <Button variant="portfolio" size="lg" className="w-full sm:w-auto">
             <Users className="w-5 h-5 mr-2" />
-            Join Ecosystem
+            Start Property Search
           </Button>
         </div>
 
@@ -115,17 +115,17 @@ const ProcessSection = () => {
         {/* Bottom CTA Section */}
         <div className="mt-12 md:mt-20 bg-secondary/50 rounded-2xl md:rounded-3xl p-8 md:p-12 text-center">
           <h3 className="text-xl md:text-3xl font-bold text-foreground mb-3 md:mb-4">
-            Ready to Join Our Smart Renting Ecosystem?
+            Ready to Find Your Ideal Commercial Space?
           </h3>
           <p className="text-sm md:text-base text-muted-foreground mb-6 md:mb-8 max-w-2xl mx-auto">
-            Be part of India's first role-based rental platform where transparency meets efficiency in property dealings.
+            Partner with India's premier commercial real estate platform for professional service and prime locations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="portfolio" size="lg" className="w-full sm:w-auto">
-              Join as Tenant
+              View Properties
             </Button>
             <Button variant="outline" size="lg" className="w-full sm:w-auto">
-              Become Partner
+              Schedule Consultation
             </Button>
           </div>
         </div>

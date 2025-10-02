@@ -16,8 +16,8 @@ const WhyChooseUs = () => {
           </div>
           <div className="lg:col-span-6 flex items-end">
             <p className="text-base md:text-xl text-muted-foreground">
-              India's first smart renting ecosystem platform where tenants, landlords, 
-              brokers, and employees connect through role-based dashboards for seamless rental experiences.
+              India's premier commercial real estate platform connecting businesses with prime office spaces, 
+              retail locations, and industrial properties through professional, transparent service.
             </p>
           </div>
         </div>
@@ -30,10 +30,10 @@ const WhyChooseUs = () => {
             <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-orange rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition-transform">
               <CheckCircle className="w-6 h-6 md:w-8 md:h-8 text-white" />
             </div>
-            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3 md:mb-4">Smart Ecosystem Platform</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3 md:mb-4">Commercial Property Expertise</h3>
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-4 md:mb-6">
-              Revolutionary single app with role-based dashboards for tenants, landlords, brokers, 
-              and employees. Everyone connected, everyone benefited through our intelligent system.
+              Specialized in office spaces, retail locations, warehouses, and business centers. 
+              Strategic locations, professional service, and tailored solutions for your business needs.
             </p>
             <Button variant="outline" size="sm" className="group w-full sm:w-auto">
               Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -47,8 +47,8 @@ const WhyChooseUs = () => {
             </div>
             <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Legal Compliance & Transparency</h3>
             <p className="text-white/90 text-sm md:text-base leading-relaxed mb-4 md:mb-6">
-              RERA registered, legally compliant platform with complete transparency for tenants. 
-              Service facilitation agreements ensure fair dealing for all parties involved.
+              RERA registered with complete legal compliance and transparency for corporate clients. 
+              Professional agreements and documentation ensuring smooth business transactions.
             </p>
             <Button variant="outline" size="sm" className="border-white text-white hover:bg-white hover:text-primary group w-full sm:w-auto">
               Explore <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -60,10 +60,10 @@ const WhyChooseUs = () => {
             <div className="w-12 h-12 md:w-16 md:h-16 bg-foreground rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition-transform">
               <Zap className="w-6 h-6 md:w-8 md:h-8 text-background" />
             </div>
-            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3 md:mb-4">Recurring Revenue Model</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3 md:mb-4">Strategic Location Analysis</h3>
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-4 md:mb-6">
-              Innovative recurring brokerage model ensures stable monthly income flow versus 
-              traditional one-time brokerage. Sustainable growth for all ecosystem partners.
+              Data-driven location insights and market analysis to help you find the perfect 
+              commercial space. Demographics, footfall, connectivity, and growth potential all considered.
             </p>
             <Button variant="outline" size="sm" className="group w-full sm:w-auto">
               Get Started <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -75,8 +75,8 @@ const WhyChooseUs = () => {
         {/* Bottom Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mt-12 md:mt-20">
           <div className="text-center">
-            <div className="text-2xl md:text-4xl font-bold text-foreground mb-2">Multi-Role</div>
-            <p className="text-sm md:text-base text-muted-foreground">Single App Platform</p>
+            <div className="text-2xl md:text-4xl font-bold text-foreground mb-2">500+</div>
+            <p className="text-sm md:text-base text-muted-foreground">Commercial Properties</p>
           </div>
           <div className="text-center">
             <div className="text-2xl md:text-4xl font-bold text-foreground mb-2">RERA</div>
@@ -84,11 +84,11 @@ const WhyChooseUs = () => {
           </div>
           <div className="text-center">
             <div className="text-2xl md:text-4xl font-bold text-foreground mb-2">24/7</div>
-            <p className="text-sm md:text-base text-muted-foreground">Dashboard Access</p>
+            <p className="text-sm md:text-base text-muted-foreground">Professional Support</p>
           </div>
           <div className="text-center">
-            <div className="text-2xl md:text-4xl font-bold text-foreground mb-2">100%</div>
-            <p className="text-sm md:text-base text-muted-foreground">Transparent Process</p>
+            <div className="text-2xl md:text-4xl font-bold text-foreground mb-2">98%</div>
+            <p className="text-sm md:text-base text-muted-foreground">Corporate Satisfaction</p>
           </div>
         </div>
 
