@@ -50,9 +50,9 @@ const PropertyTypes = () => {
                   <span className="text-xs md:text-sm">Business District</span>
                 </div>
               </div>
-              <h3 className="text-xl md:text-3xl font-bold text-foreground mb-2 md:mb-3">Modern Office Spaces</h3>
+              <h3 className="text-xl md:text-3xl font-bold text-foreground mb-2 md:mb-3">Office Spaces</h3>
               <p className="text-sm md:text-base text-muted-foreground mb-4 md:mb-6">
-                State-of-the-art office environments designed for productivity and collaboration.
+                Premium office spaces in Salt Lake, Rajarhat, and Park Street with metro connectivity and modern amenities.
               </p>
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
                 <div className="flex items-center gap-2 text-muted-foreground">
@@ -82,7 +82,7 @@ const PropertyTypes = () => {
                 <div className="flex-1">
                   <h3 className="text-lg md:text-xl font-bold text-foreground mb-2">Retail Spaces</h3>
                   <p className="text-muted-foreground text-xs md:text-sm mb-3 md:mb-4">
-                    High-footfall retail locations perfect for establishing your brand presence.
+                    High-footfall retail locations in Park Street, Gariahat, and premium malls across Kolkata.
                   </p>
                   <Button variant="link" className="p-0 h-auto group">
                     View Collection <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
@@ -104,7 +104,7 @@ const PropertyTypes = () => {
                 <div className="flex-1">
                   <h3 className="text-lg md:text-xl font-bold mb-2">Warehouse & Industrial</h3>
                   <p className="text-white/90 text-xs md:text-sm mb-3 md:mb-4">
-                    Large-scale industrial spaces with logistics connectivity and modern facilities.
+                    Warehouses near Dankuni, Dhulagarh with NH connectivity for manufacturing and distribution.
                   </p>
                   <Button variant="link" className="p-0 h-auto text-white hover:text-white/80 group">
                     Discover More <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
@@ -126,7 +126,7 @@ const PropertyTypes = () => {
                 <div className="flex-1">
                   <h3 className="text-lg md:text-xl font-bold text-foreground mb-2">Business Centers</h3>
                   <p className="text-muted-foreground text-xs md:text-sm mb-3 md:mb-4">
-                    Serviced offices and coworking spaces in premium locations with full amenities.
+                    Flexible co-working spaces in New Town and Salt Lake with conference rooms and high-speed internet.
                   </p>
                   <Button variant="link" className="p-0 h-auto group">
                     Browse Centers <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
@@ -140,20 +140,26 @@ const PropertyTypes = () => {
 
         {/* Bottom Exhibition Banner */}
         <div className="mt-12 md:mt-16 bg-foreground rounded-2xl md:rounded-3xl p-8 md:p-12 text-center text-white">
-          <h3 className="text-xl md:text-3xl font-bold mb-3 md:mb-4">commercial • property • showcase</h3>
+          <h3 className="text-xl md:text-3xl font-bold mb-3 md:mb-4">Kolkata's Premier Commercial Properties</h3>
           <p className="text-white/80 text-sm md:text-lg mb-6 md:mb-8 max-w-2xl mx-auto">
-            Join us for exclusive commercial property tours where prime business spaces meet forward-thinking companies.
+            Explore prime commercial spaces across Kolkata's key business districts. From startups to enterprises, 
+            we have the perfect space for your business needs.
           </p>
-          <div className="grid sm:grid-cols-2 gap-4 md:gap-6 max-w-md mx-auto">
+          <div className="grid sm:grid-cols-3 gap-4 md:gap-6 max-w-3xl mx-auto">
             <div className="bg-white/10 rounded-xl md:rounded-2xl p-3 md:p-4">
-              <p className="text-xs md:text-sm text-white/60">Next Exhibition</p>
-              <p className="font-bold text-sm md:text-base">Madrid Gallery, Spain</p>
-              <p className="text-xs md:text-sm">27 Nov 2024</p>
+              <p className="text-xs md:text-sm text-white/60">Prime Location</p>
+              <p className="font-bold text-sm md:text-base">Salt Lake Sector V</p>
+              <p className="text-xs md:text-sm">IT Hub</p>
             </div>
             <div className="bg-white/10 rounded-xl md:rounded-2xl p-3 md:p-4">
-              <p className="text-xs md:text-sm text-white/60">Special Event</p>
-              <p className="font-bold text-sm md:text-base">Manchester Premium</p>
-              <p className="text-xs md:text-sm">20 Nov 2024</p>
+              <p className="text-xs md:text-sm text-white/60">Business District</p>
+              <p className="font-bold text-sm md:text-base">Park Street</p>
+              <p className="text-xs md:text-sm">Retail & Office</p>
+            </div>
+            <div className="bg-white/10 rounded-xl md:rounded-2xl p-3 md:p-4">
+              <p className="text-xs md:text-sm text-white/60">Growth Area</p>
+              <p className="font-bold text-sm md:text-base">New Town Rajarhat</p>
+              <p className="text-xs md:text-sm">Modern Offices</p>
             </div>
           </div>
         </div>

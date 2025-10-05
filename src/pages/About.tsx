@@ -4,10 +4,10 @@ import { Building2, Users, Trophy, Shield } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { number: "500+", label: "Commercial Properties" },
-    { number: "300+", label: "Corporate Clients" },
-    { number: "50+", label: "Cities Covered" },
-    { number: "8", label: "Years Experience" },
+    { number: "300+", label: "Properties in Kolkata" },
+    { number: "500+", label: "Happy Clients" },
+    { number: "15+", label: "Years in Business" },
+    { number: "RERA", label: "Registered & Verified" },
   ];
 
   const team = [
@@ -40,8 +40,8 @@ const About = () => {
               About Suitespott
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              We're revolutionizing commercial real estate with professional service, strategic locations, 
-              and transparent processes. Our mission is to help businesses find the perfect space to grow.
+              Based in Kolkata, we're your trusted commercial real estate partner. With deep local market knowledge 
+              and 15+ years of experience, we help businesses find prime office, retail, and industrial spaces across the city.
             </p>
           </div>
         </div>
@@ -72,8 +72,8 @@ const About = () => {
             <div>
               <h2 className="text-4xl font-bold mb-6">Our Mission</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                To provide businesses with prime commercial spaces through professional service, 
-                strategic insights, and transparent processes that enable business growth and success.
+                To connect Kolkata businesses with the perfect commercial spaces through local expertise, 
+                professional service, and transparent processes that drive growth across the city's business districts.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex items-center space-x-3">
@@ -97,9 +97,9 @@ const About = () => {
             <div className="bg-gradient-to-br from-primary/10 to-orange-500/10 rounded-3xl p-8">
               <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
               <p className="text-muted-foreground leading-relaxed">
-                To become India's most trusted commercial real estate platform, 
-                setting new standards for professionalism, strategic advisory, and client satisfaction 
-                in the commercial property sector.
+                To be Kolkata's most trusted commercial real estate consultancy, 
+                known for our deep local knowledge, professional service, and commitment to helping 
+                businesses find their ideal spaces in the city's prime locations.
               </p>
             </div>
           </div>

@@ -18,8 +18,8 @@ const HeroSection = () => {
               
               <div className="bg-card rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-card max-w-lg">
                 <p className="text-base md:text-lg text-muted-foreground mb-6">
-                  India's premier commercial property platform connecting businesses with prime office spaces, 
-                  retail locations, and industrial properties through transparent, professional service.
+                  Kolkata's trusted commercial real estate partner. We connect businesses with prime office spaces, 
+                  retail locations, and industrial properties across Kolkata and West Bengal.
                 </p>
                 
                 <div className="flex items-center gap-4 text-sm">
@@ -43,10 +43,10 @@ const HeroSection = () => {
             
             {/* Stats Card 1 */}
             <div className="bg-card rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-card">
-              <div className="text-2xl md:text-4xl font-bold text-foreground mb-2">500+</div>
+              <div className="text-2xl md:text-4xl font-bold text-foreground mb-2">300+</div>
               <p className="text-xs md:text-sm text-muted-foreground">
-                Commercial properties across 
-                prime business locations
+                Properties across Salt Lake, 
+                Park Street, Rajarhat & more
               </p>
             </div>
 
@@ -93,10 +93,10 @@ const HeroSection = () => {
 
             {/* About Text Card */}
             <div className="col-span-2 bg-foreground rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-card text-white">
-              <h3 className="text-lg md:text-2xl font-bold mb-3 md:mb-4">commercial • office • retail • industrial</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-3 md:mb-4">Based in Kolkata • Serving West Bengal</h3>
               <p className="text-white/80 text-sm md:text-lg">
-                Premier commercial real estate solutions where business needs meet prime locations. 
-                Professional service, strategic spaces, endless growth opportunities.
+                Your local commercial real estate experts helping businesses find the perfect office, 
+                retail, or industrial space in Kolkata's prime business districts.
               </p>
             </div>
 
