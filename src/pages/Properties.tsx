@@ -1,10 +1,19 @@
+import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Building2, Users, Award, TrendingUp, CheckCircle, MapPin, Calendar } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Building2, Users, Award, TrendingUp, CheckCircle, MapPin, Calendar, Target, BarChart } from "lucide-react";
 
 const Properties = () => {
+  const [selectedProject, setSelectedProject] = useState<number | null>(null);
   const completedProjects = [
     {
       id: 1,
@@ -17,6 +26,13 @@ const Properties = () => {
       image: "/src/assets/office-space.jpg",
       description: "Premium Grade A office space with modern amenities for leading IT companies",
       achievements: ["LEED Certified", "100% Occupied", "Smart Building"],
+      caseStudy: {
+        challenge: "Client needed a modern, tech-enabled workspace that could accommodate 500+ employees with future scalability.",
+        solution: "Designed and delivered a state-of-the-art IT park with smart building technology, flexible workspaces, and premium amenities.",
+        results: ["Achieved 100% occupancy within 3 months", "Reduced operational costs by 25%", "LEED Gold certification achieved"],
+        timeline: "12 months from concept to completion",
+        investment: "₹45 Crore"
+      },
     },
     {
       id: 2,
@@ -29,6 +45,13 @@ const Properties = () => {
       image: "/src/assets/commercial-space.jpg",
       description: "High-street retail development in Kolkata's premier shopping district",
       achievements: ["30+ Premium Brands", "Footfall 50k/day", "Prime Location"],
+      caseStudy: {
+        challenge: "Transform a heritage building into a modern retail space while preserving its architectural character.",
+        solution: "Carefully restored the facade while creating contemporary interiors with modern retail infrastructure and amenities.",
+        results: ["Attracted 30+ premium brands", "Daily footfall of 50,000+", "20% higher rental yields than area average"],
+        timeline: "18 months including heritage clearances",
+        investment: "₹80 Crore"
+      },
     },
     {
       id: 3,
@@ -41,6 +64,13 @@ const Properties = () => {
       image: "/src/assets/office-space.jpg",
       description: "State-of-the-art business center with flexible workspace solutions",
       achievements: ["Co-working Spaces", "Conference Facilities", "24/7 Access"],
+      caseStudy: {
+        challenge: "Create a versatile business hub catering to startups, SMEs, and corporate satellite offices.",
+        solution: "Developed flexible spaces with modular design, advanced IT infrastructure, and comprehensive business support services.",
+        results: ["95% occupancy rate", "Hosted 80+ companies", "Became New Town's premier business address"],
+        timeline: "10 months from design to operation",
+        investment: "₹60 Crore"
+      },
     },
     {
       id: 4,
@@ -53,6 +83,13 @@ const Properties = () => {
       image: "/src/assets/commercial-space.jpg",
       description: "Modern warehouse facility with excellent logistics connectivity",
       achievements: ["Strategic Location", "High Ceiling", "Loading Docks"],
+      caseStudy: {
+        challenge: "Develop a logistics facility meeting international standards for manufacturing and e-commerce clients.",
+        solution: "Built a high-bay warehouse with advanced material handling systems, temperature-controlled zones, and excellent road-rail connectivity.",
+        results: ["Reduced logistics costs by 30%", "24/7 operations capability", "Compliant with international warehouse standards"],
+        timeline: "14 months including infrastructure development",
+        investment: "₹95 Crore"
+      },
     },
     {
       id: 5,
@@ -65,6 +102,13 @@ const Properties = () => {
       image: "/src/assets/commercial-space.jpg",
       description: "Mixed-use development combining retail and office spaces",
       achievements: ["Mixed-Use Design", "High Visibility", "Parking Facility"],
+      caseStudy: {
+        challenge: "Maximize land value by creating a harmonious mixed-use development in a high-traffic area.",
+        solution: "Designed a vertical mixed-use complex with retail on lower floors and office spaces above, with dedicated access and parking.",
+        results: ["100% retail leasing", "Premium office rentals 15% above market", "Landmark development in Gariahat"],
+        timeline: "16 months completion",
+        investment: "₹55 Crore"
+      },
     },
     {
       id: 6,
@@ -77,6 +121,13 @@ const Properties = () => {
       image: "/src/assets/office-space.jpg",
       description: "Modern logistics facility with cutting-edge storage solutions",
       achievements: ["Cold Storage", "24/7 Security", "Rail Connectivity"],
+      caseStudy: {
+        challenge: "Create a multi-purpose logistics facility serving diverse supply chain needs including cold storage.",
+        solution: "Developed a specialized facility with temperature-controlled zones, advanced security, and direct rail connectivity for bulk cargo.",
+        results: ["Serving 15+ major clients", "Zero downtime in operations", "30% improvement in supply chain efficiency"],
+        timeline: "15 months with phased commissioning",
+        investment: "₹85 Crore"
+      },
     },
   ];
 
@@ -208,7 +259,11 @@ const Properties = () => {
                   </div>
                   
                   {/* Action Button */}
-                  <Button variant="outline" className="w-full">
+                  <Button 
+                    variant="outline" 
+                    className="w-full"
+                    onClick={() => setSelectedProject(project.id)}
+                  >
                     View Case Study
                   </Button>
                 </div>
@@ -224,6 +279,128 @@ const Properties = () => {
           </div>
         </div>
       </section>
+
+      {/* Case Study Dialog */}
+      <Dialog open={selectedProject !== null} onOpenChange={() => setSelectedProject(null)}>
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+          {selectedProject && (() => {
+            const project = completedProjects.find(p => p.id === selectedProject);
+            if (!project) return null;
+            
+            return (
+              <>
+                <DialogHeader>
+                  <DialogTitle className="text-3xl font-bold">{project.title}</DialogTitle>
+                  <DialogDescription className="text-lg">
+                    {project.description}
+                  </DialogDescription>
+                </DialogHeader>
+                
+                <div className="space-y-6 mt-6">
+                  {/* Project Overview */}
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2">
+                        <MapPin className="h-5 w-5 text-primary" />
+                        <div>
+                          <p className="text-sm text-muted-foreground">Location</p>
+                          <p className="font-semibold">{project.location}</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2">
+                        <Building2 className="h-5 w-5 text-primary" />
+                        <div>
+                          <p className="text-sm text-muted-foreground">Total Area</p>
+                          <p className="font-semibold">{project.area}</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2">
+                        <Calendar className="h-5 w-5 text-primary" />
+                        <div>
+                          <p className="text-sm text-muted-foreground">Completion Year</p>
+                          <p className="font-semibold">{project.completion}</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2">
+                        <Users className="h-5 w-5 text-primary" />
+                        <div>
+                          <p className="text-sm text-muted-foreground">Client</p>
+                          <p className="font-semibold">{project.client}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Case Study Details */}
+                  {project.caseStudy && (
+                    <>
+                      <div className="border-t pt-6">
+                        <div className="flex items-center gap-2 mb-3">
+                          <Target className="h-5 w-5 text-primary" />
+                          <h3 className="text-xl font-bold">Challenge</h3>
+                        </div>
+                        <p className="text-muted-foreground">{project.caseStudy.challenge}</p>
+                      </div>
+
+                      <div className="border-t pt-6">
+                        <div className="flex items-center gap-2 mb-3">
+                          <Award className="h-5 w-5 text-primary" />
+                          <h3 className="text-xl font-bold">Solution</h3>
+                        </div>
+                        <p className="text-muted-foreground">{project.caseStudy.solution}</p>
+                      </div>
+
+                      <div className="border-t pt-6">
+                        <div className="flex items-center gap-2 mb-3">
+                          <BarChart className="h-5 w-5 text-primary" />
+                          <h3 className="text-xl font-bold">Results</h3>
+                        </div>
+                        <ul className="space-y-2">
+                          {project.caseStudy.results.map((result, index) => (
+                            <li key={index} className="flex items-start gap-2">
+                              <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                              <span className="text-muted-foreground">{result}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      <div className="grid md:grid-cols-2 gap-4 border-t pt-6">
+                        <div className="bg-muted/50 p-4 rounded-lg">
+                          <p className="text-sm text-muted-foreground mb-1">Project Timeline</p>
+                          <p className="font-semibold text-lg">{project.caseStudy.timeline}</p>
+                        </div>
+                        <div className="bg-muted/50 p-4 rounded-lg">
+                          <p className="text-sm text-muted-foreground mb-1">Investment</p>
+                          <p className="font-semibold text-lg text-primary">{project.caseStudy.investment}</p>
+                        </div>
+                      </div>
+                    </>
+                  )}
+
+                  {/* Achievements */}
+                  <div className="border-t pt-6">
+                    <h3 className="text-xl font-bold mb-4">Key Achievements</h3>
+                    <div className="flex flex-wrap gap-3">
+                      {project.achievements.map((achievement, index) => (
+                        <Badge key={index} variant="secondary" className="px-4 py-2">
+                          {achievement}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </>
+            );
+          })()}
+        </DialogContent>
+      </Dialog>
 
       <Footer />
     </div>
