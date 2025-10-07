@@ -7,59 +7,59 @@ const Portfolio = () => {
   const featuredProperties = [
     {
       id: 1,
-      title: "Modern Downtown Apartment",
-      location: "Manhattan, New York",
-      price: "$3,500/month",
-      type: "Apartment",
-      beds: 2,
-      baths: 2,
-      sqft: 1200,
-      rating: 4.9,
-      image: "/src/assets/apartment.jpg",
-      featured: true,
-    },
-    {
-      id: 2,
-      title: "Luxury Office Space",
-      location: "Financial District, NYC",
-      price: "$8,000/month",
+      title: "Salt Lake IT Park Office",
+      location: "Salt Lake Sector V, Kolkata",
+      price: "₹2,50,000/month",
       type: "Office",
       beds: 0,
       baths: 2,
-      sqft: 2500,
-      rating: 4.8,
+      sqft: 3500,
+      rating: 4.9,
       image: "/src/assets/office-space.jpg",
       featured: true,
     },
     {
-      id: 3,
-      title: "Cozy Family House",
-      location: "Brooklyn Heights",
-      price: "$4,200/month",
-      type: "House",
-      beds: 3,
+      id: 2,
+      title: "Park Street Retail Space",
+      location: "Park Street, Kolkata",
+      price: "₹4,50,000/month",
+      type: "Retail",
+      beds: 0,
       baths: 2,
-      sqft: 1800,
+      sqft: 4000,
+      rating: 4.8,
+      image: "/src/assets/commercial-space.jpg",
+      featured: true,
+    },
+    {
+      id: 3,
+      title: "New Town Business Hub",
+      location: "New Town, Rajarhat",
+      price: "₹3,00,000/month",
+      type: "Office",
+      beds: 0,
+      baths: 3,
+      sqft: 5000,
       rating: 4.7,
-      image: "/src/assets/house.jpg",
+      image: "/src/assets/office-space.jpg",
       featured: false,
     },
     {
       id: 4,
-      title: "Commercial Retail Space",
-      location: "SoHo, Manhattan",
-      price: "$12,000/month",
+      title: "Gariahat Commercial Complex",
+      location: "Gariahat, Kolkata",
+      price: "₹5,50,000/month",
       type: "Commercial",
       beds: 0,
-      baths: 1,
-      sqft: 3000,
+      baths: 2,
+      sqft: 6000,
       rating: 4.9,
       image: "/src/assets/commercial-space.jpg",
       featured: false,
     },
   ];
 
-  const categories = ["All", "Apartments", "Houses", "Offices", "Commercial"];
+  const categories = ["All", "Office", "Retail", "Industrial", "Mixed-Use"];
 
   return (
     <div className="min-h-screen">
@@ -69,12 +69,12 @@ const Portfolio = () => {
       <section className="pt-32 pb-20 bg-gradient-to-br from-background to-muted">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-orange-500 to-yellow-500 bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
               Our Portfolio
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Discover our curated collection of premium properties across different categories. 
-              From modern apartments to commercial spaces, we have something for everyone.
+              Showcasing premium commercial properties across Kolkata's prime business districts. 
+              From modern office spaces to strategic retail locations.
             </p>
           </div>
         </div>
@@ -101,9 +101,9 @@ const Portfolio = () => {
       <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Featured Properties</h2>
+            <h2 className="text-4xl font-bold mb-4">Featured Commercial Properties</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Hand-picked premium properties with exceptional quality and prime locations
+              Premium commercial spaces in Kolkata's most sought-after business locations
             </p>
           </div>
 
@@ -165,9 +165,9 @@ const Portfolio = () => {
 
           {/* All Properties Grid */}
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold mb-4">All Properties</h3>
+            <h3 className="text-3xl font-bold mb-4">All Commercial Spaces</h3>
             <p className="text-lg text-muted-foreground">
-              Browse our complete collection of available properties
+              Browse our complete collection of available commercial properties in Kolkata
             </p>
           </div>
 
