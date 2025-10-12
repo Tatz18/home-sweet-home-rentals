@@ -7,59 +7,119 @@ const Portfolio = () => {
   const featuredProperties = [
     {
       id: 1,
-      title: "Salt Lake IT Park Office",
+      title: "Executive Office Complete Renovation",
       location: "Salt Lake Sector V, Kolkata",
-      price: "₹2,50,000/month",
-      type: "Office",
+      price: "₹1.2 Crore",
+      type: "Office Renovation",
       beds: 0,
-      baths: 2,
-      sqft: 3500,
+      baths: 3,
+      sqft: 12000,
       rating: 4.9,
       image: "/src/assets/office-space.jpg",
       featured: true,
+      description: "Complete transformation of traditional office into modern collaborative workspace"
     },
     {
       id: 2,
-      title: "Park Street Retail Space",
-      location: "Park Street, Kolkata",
-      price: "₹4,50,000/month",
-      type: "Retail",
-      beds: 0,
-      baths: 2,
-      sqft: 4000,
-      rating: 4.8,
-      image: "/src/assets/commercial-space.jpg",
+      title: "Luxury Villa Interior Design",
+      location: "Alipore, Kolkata",
+      price: "₹85 Lakhs",
+      type: "House Interior Design",
+      beds: 4,
+      baths: 4,
+      sqft: 4500,
+      rating: 4.9,
+      image: "/src/assets/house.jpg",
       featured: true,
+      description: "Contemporary luxury home interiors with custom furniture and smart home features"
     },
     {
       id: 3,
-      title: "New Town Business Hub",
+      title: "Heritage House Restoration",
+      location: "Ballygunge, Kolkata",
+      price: "₹2.5 Crore",
+      type: "House Renovation",
+      beds: 5,
+      baths: 5,
+      sqft: 6000,
+      rating: 4.8,
+      image: "/src/assets/house.jpg",
+      featured: false,
+      description: "Careful restoration of 100-year heritage home with modern amenities"
+    },
+    {
+      id: 4,
+      title: "Modern Apartment Interiors",
       location: "New Town, Rajarhat",
-      price: "₹3,00,000/month",
-      type: "Office",
+      price: "₹18 Lakhs",
+      type: "Interior Design",
+      beds: 3,
+      baths: 2,
+      sqft: 1800,
+      rating: 4.7,
+      image: "/src/assets/apartment.jpg",
+      featured: false,
+      description: "Minimalist modern interiors with space optimization and modular design"
+    },
+    {
+      id: 5,
+      title: "Co-Working Space Interior",
+      location: "Park Street, Kolkata",
+      price: "₹65 Lakhs",
+      type: "Office Interior Design",
       beds: 0,
-      baths: 3,
+      baths: 4,
+      sqft: 8000,
+      rating: 4.8,
+      image: "/src/assets/office-space.jpg",
+      featured: false,
+      description: "Vibrant co-working space with flexible zones and modern aesthetics"
+    },
+    {
+      id: 6,
+      title: "Premium Villa Makeover",
+      location: "EM Bypass, Kolkata",
+      price: "₹3.2 Crore",
+      type: "House Renovation & Interior",
+      beds: 5,
+      baths: 6,
+      sqft: 7500,
+      rating: 4.9,
+      image: "/src/assets/house.jpg",
+      featured: false,
+      description: "Complete villa transformation with luxury interiors and smart home integration"
+    },
+    {
+      id: 7,
+      title: "Boutique Office Design",
+      location: "Camac Street, Kolkata",
+      price: "₹45 Lakhs",
+      type: "Office Interior Design",
+      beds: 0,
+      baths: 2,
       sqft: 5000,
       rating: 4.7,
       image: "/src/assets/office-space.jpg",
       featured: false,
+      description: "Elegant office interiors with luxury finishes for professional services firm"
     },
     {
-      id: 4,
-      title: "Gariahat Commercial Complex",
-      location: "Gariahat, Kolkata",
-      price: "₹5,50,000/month",
-      type: "Commercial",
-      beds: 0,
-      baths: 2,
-      sqft: 6000,
-      rating: 4.9,
-      image: "/src/assets/commercial-space.jpg",
+      id: 8,
+      title: "Duplex Home Interior",
+      location: "South City, Kolkata",
+      price: "₹42 Lakhs",
+      type: "House Interior Design",
+      beds: 4,
+      baths: 3,
+      sqft: 3200,
+      rating: 4.8,
+      image: "/src/assets/house.jpg",
       featured: false,
+      description: "Contemporary duplex interiors with open staircase and modern kitchen"
     },
   ];
 
-  const categories = ["All", "Office", "Retail", "Industrial", "Mixed-Use"];
+  const categories = ["All", "Office Renovation", "House Renovation", "Interior Design", "Office Interior", "House Interior"];
 
   return (
     <div className="min-h-screen">
@@ -73,8 +133,8 @@ const Portfolio = () => {
               Our Portfolio
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Showcasing premium commercial properties across Kolkata's prime business districts. 
-              From modern office spaces to strategic retail locations.
+              Showcasing our expertise in office renovations, house transformations, and luxury interior design. 
+              From heritage restorations to contemporary makeovers across Kolkata.
             </p>
           </div>
         </div>
@@ -101,9 +161,9 @@ const Portfolio = () => {
       <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Featured Commercial Properties</h2>
+            <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Premium commercial spaces in Kolkata's most sought-after business locations
+              Exceptional renovation and interior design projects that showcase our commitment to excellence
             </p>
           </div>
 
@@ -165,9 +225,9 @@ const Portfolio = () => {
 
           {/* All Properties Grid */}
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold mb-4">All Commercial Spaces</h3>
+            <h3 className="text-3xl font-bold mb-4">All Projects</h3>
             <p className="text-lg text-muted-foreground">
-              Browse our complete collection of available commercial properties in Kolkata
+              Browse our complete collection of renovation and interior design projects across Kolkata
             </p>
           </div>
 
