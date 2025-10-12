@@ -12,14 +12,14 @@ const HeroSection = () => {
           <div className="lg:col-span-7 flex flex-col justify-center">
             <div className="space-y-6 md:space-y-8">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black text-foreground leading-none">
-                commercial<br />
-                <span className="text-transparent bg-clip-text bg-gradient-orange">real estate</span>
+                renovation &<br />
+                <span className="text-transparent bg-clip-text bg-gradient-orange">interior design</span>
               </h1>
               
               <div className="bg-card rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-card max-w-lg">
                 <p className="text-base md:text-lg text-muted-foreground mb-6">
-                  Kolkata's trusted commercial real estate partner. We connect businesses with prime office spaces, 
-                  retail locations, and industrial properties across Kolkata and West Bengal.
+                  Kolkata's premier renovation and interior design experts. We transform offices, homes, and commercial spaces 
+                  with innovative design and superior craftsmanship across Kolkata and West Bengal.
                 </p>
                 
                 <div className="flex items-center gap-4 text-sm">
@@ -33,7 +33,7 @@ const HeroSection = () => {
               </div>
 
               <Button variant="portfolio" size="lg" className="w-full sm:w-fit">
-                Explore Properties <ArrowRight className="w-5 h-5 ml-2" />
+                View Our Portfolio <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </div>
           </div>
@@ -43,10 +43,10 @@ const HeroSection = () => {
             
             {/* Stats Card 1 */}
             <div className="bg-card rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-card">
-              <div className="text-2xl md:text-4xl font-bold text-foreground mb-2">300+</div>
+              <div className="text-2xl md:text-4xl font-bold text-foreground mb-2">150+</div>
               <p className="text-xs md:text-sm text-muted-foreground">
-                Properties across Salt Lake, 
-                Park Street, Rajarhat & more
+                Projects completed across 
+                Alipore, Salt Lake, New Town & more
               </p>
             </div>
 
@@ -68,8 +68,8 @@ const HeroSection = () => {
             <div className="bg-card rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-card">
               <div className="text-2xl md:text-4xl font-bold text-foreground mb-2">98%</div>
               <p className="text-xs md:text-sm text-muted-foreground">
-                Corporate client satisfaction 
-                with our professional service
+                Client satisfaction 
+                with our design & renovation work
               </p>
             </div>
 
@@ -93,10 +93,10 @@ const HeroSection = () => {
 
             {/* About Text Card */}
             <div className="col-span-2 bg-foreground rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-card text-white">
-              <h3 className="text-lg md:text-2xl font-bold mb-3 md:mb-4">Based in Kolkata • Serving West Bengal</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-3 md:mb-4">Based in Kolkata • Serving All Over India</h3>
               <p className="text-white/80 text-sm md:text-lg">
-                Your local commercial real estate experts helping businesses find the perfect office, 
-                retail, or industrial space in Kolkata's prime business districts.
+                Your local renovation and interior design experts transforming offices, homes, and commercial spaces 
+                with creative design solutions and quality execution.
               </p>
             </div>
 

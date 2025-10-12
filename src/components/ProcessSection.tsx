@@ -5,26 +5,26 @@ const ProcessSection = () => {
   const steps = [
     {
       icon: <Users className="w-8 h-8 text-white" />,
-      title: "Business Requirements",
-      description: "Understanding your business needs, space requirements, location preferences, and budget considerations.",
+      title: "Consultation & Vision",
+      description: "Understanding your space, style preferences, functional requirements, and budget to create the perfect design plan.",
       featured: true
     },
     {
       icon: <FileText className="w-8 h-8 text-primary" />,
-      title: "Property Selection",
-      description: "Curated shortlist of commercial properties matching your criteria with detailed specifications and location analysis.",
+      title: "Design & Planning",
+      description: "Detailed design concepts, 3D visualizations, material selection, and comprehensive project planning with timelines.",
       featured: false
     },
     {
       icon: <Shield className="w-8 h-8 text-primary" />,
-      title: "Site Visits & Negotiation", 
-      description: "Professional property tours with expert negotiation support to secure the best terms for your business.",
+      title: "Execution & Quality Control", 
+      description: "Professional execution by skilled craftsmen with rigorous quality checks and regular progress updates.",
       featured: false
     },
     {
       icon: <Zap className="w-8 h-8 text-white" />,
-      title: "Documentation & Handover",
-      description: "Complete legal documentation, RERA compliance, and smooth property handover with ongoing support.",
+      title: "Final Handover & Support",
+      description: "Thorough inspection, professional photography, and ongoing support to ensure your complete satisfaction.",
       featured: true
     }
   ];
@@ -36,15 +36,15 @@ const ProcessSection = () => {
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-foreground leading-tight mb-4 md:mb-6">
-            leasing<br />
+            our<br />
             <span className="text-transparent bg-clip-text bg-gradient-orange">process</span>
           </h2>
           <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 md:mb-8">
-            Streamlined commercial leasing process designed for efficiency, transparency, and your business success.
+            Streamlined design and renovation process ensuring quality, transparency, and your vision brought to life.
           </p>
           <Button variant="portfolio" size="lg" className="w-full sm:w-auto">
             <Users className="w-5 h-5 mr-2" />
-            Start Property Search
+            Start Your Project
           </Button>
         </div>
 
@@ -115,14 +115,14 @@ const ProcessSection = () => {
         {/* Bottom CTA Section */}
         <div className="mt-12 md:mt-20 bg-secondary/50 rounded-2xl md:rounded-3xl p-8 md:p-12 text-center">
           <h3 className="text-xl md:text-3xl font-bold text-foreground mb-3 md:mb-4">
-            Ready to Find Your Ideal Commercial Space?
+            Ready to Transform Your Space?
           </h3>
           <p className="text-sm md:text-base text-muted-foreground mb-6 md:mb-8 max-w-2xl mx-auto">
-            Partner with India's premier commercial real estate platform for professional service and prime locations.
+            Partner with Kolkata's leading renovation and interior design experts for exceptional results.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="portfolio" size="lg" className="w-full sm:w-auto">
-              View Properties
+              View Portfolio
             </Button>
             <Button variant="outline" size="lg" className="w-full sm:w-auto">
               Schedule Consultation
