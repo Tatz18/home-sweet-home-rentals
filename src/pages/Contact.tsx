@@ -38,13 +38,13 @@ const Contact = () => {
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "Visit Our Office",
-      details: ["123 Real Estate Ave", "New York, NY 10001"],
+      details: ["Regus, Globsyn Crystal", "Saltlake, 700091"],
       action: "Get Directions",
     },
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Call Us",
-      details: ["+1 (555) 123-4567", "+1 (555) 987-6543"],
+      details: ["+91 9123673530", "+91 8207080940"],
       action: "Call Now",
     },
     {
@@ -249,7 +249,7 @@ const Contact = () => {
                     <div className="text-center">
                       <MapPin className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
                       <p className="text-muted-foreground">Interactive Map</p>
-                      <p className="text-sm text-muted-foreground">123 Real Estate Ave, New York, NY</p>
+                      <p className="text-sm text-muted-foreground">Regus, Globsyn Crystal, Saltlake, 700091</p>
                     </div>
                   </div>
                 </CardContent>

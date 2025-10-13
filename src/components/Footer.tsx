@@ -80,7 +80,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-2 md:gap-3">
                 <Phone className="w-3 h-3 md:w-4 md:h-4 text-primary flex-shrink-0" />
-                <span className="text-xs md:text-sm text-muted-foreground">+1 (555) 123-4567</span>
+                <span className="text-xs md:text-sm text-muted-foreground">+91 9123673530 / +91 8207080940</span>
               </div>
               <div className="flex items-center gap-2 md:gap-3">
                 <Mail className="w-3 h-3 md:w-4 md:h-4 text-primary flex-shrink-0" />
@@ -88,7 +88,7 @@ const Footer = () => {
               </div>
               <div className="flex items-start gap-2 md:gap-3">
                 <MapPin className="w-3 h-3 md:w-4 md:h-4 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-xs md:text-sm text-muted-foreground">123 Business St, City, State 12345</span>
+                <span className="text-xs md:text-sm text-muted-foreground">Regus, Globsyn Crystal, Saltlake, 700091</span>
               </div>
             </div>
           </div>
