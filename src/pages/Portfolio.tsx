@@ -2,8 +2,11 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Bed, Bath, Square, Star } from "lucide-react";
+import { useState } from "react";
 
 const Portfolio = () => {
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
   const featuredProperties = [
     {
       id: 1,
@@ -121,6 +124,18 @@ const Portfolio = () => {
 
   const categories = ["All", "Office Renovation", "House Renovation", "Interior Design", "Office Interior", "House Interior"];
 
+  const filteredProperties = selectedCategory === "All" 
+    ? featuredProperties 
+    : featuredProperties.filter(property => {
+        if (selectedCategory === "Office Interior") {
+          return property.type.includes("Office Interior");
+        }
+        if (selectedCategory === "House Interior") {
+          return property.type.includes("House Interior");
+        }
+        return property.type.includes(selectedCategory);
+      });
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -147,8 +162,13 @@ const Portfolio = () => {
             {categories.map((category) => (
               <Badge
                 key={category}
-                variant="secondary"
-                className="px-6 py-2 text-sm font-medium cursor-pointer hover:bg-primary hover:text-primary-foreground transition-colors"
+                variant={selectedCategory === category ? "default" : "secondary"}
+                className={`px-6 py-2 text-sm font-medium cursor-pointer transition-colors ${
+                  selectedCategory === category 
+                    ? "bg-primary text-primary-foreground" 
+                    : "hover:bg-primary hover:text-primary-foreground"
+                }`}
+                onClick={() => setSelectedCategory(category)}
               >
                 {category}
               </Badge>
@@ -168,7 +188,7 @@ const Portfolio = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
-            {featuredProperties.filter(p => p.featured).map((property) => (
+            {filteredProperties.filter(p => p.featured).map((property) => (
               <div key={property.id} className="group bg-background rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
                 <div className="relative overflow-hidden">
                   <img 
@@ -232,7 +252,7 @@ const Portfolio = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {featuredProperties.map((property) => (
+            {filteredProperties.map((property) => (
               <div key={`all-${property.id}`} className="group bg-background rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <div className="relative overflow-hidden">
                   <img 
