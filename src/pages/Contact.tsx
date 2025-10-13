@@ -5,8 +5,35 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock, MessageCircle, Calendar } from "lucide-react";
+import { useState } from "react";
+import { toast } from "@/hooks/use-toast";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    propertyType: '',
+    message: ''
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    toast({
+      title: "Message Sent!",
+      description: "We'll get back to you within 24 hours.",
+    });
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: '',
+      phone: '',
+      propertyType: '',
+      message: ''
+    });
+  };
+
   const contactInfo = [
     {
       icon: <MapPin className="h-6 w-6" />,
@@ -101,35 +128,66 @@ const Contact = () => {
                 Fill out the form below and we'll get back to you within 24 hours.
               </p>
               
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium mb-2">First Name</label>
-                    <Input placeholder="John" className="h-12" />
+                    <Input 
+                      placeholder="John" 
+                      className="h-12" 
+                      value={formData.firstName}
+                      onChange={(e) => setFormData({...formData, firstName: e.target.value})}
+                      required
+                    />
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-2">Last Name</label>
-                    <Input placeholder="Doe" className="h-12" />
+                    <Input 
+                      placeholder="Doe" 
+                      className="h-12" 
+                      value={formData.lastName}
+                      onChange={(e) => setFormData({...formData, lastName: e.target.value})}
+                      required
+                    />
                   </div>
                 </div>
                 
                 <div>
                   <label className="block text-sm font-medium mb-2">Email Address</label>
-                  <Input type="email" placeholder="john@example.com" className="h-12" />
+                  <Input 
+                    type="email" 
+                    placeholder="john@example.com" 
+                    className="h-12" 
+                    value={formData.email}
+                    onChange={(e) => setFormData({...formData, email: e.target.value})}
+                    required
+                  />
                 </div>
                 
                 <div>
                   <label className="block text-sm font-medium mb-2">Phone Number</label>
-                  <Input type="tel" placeholder="+1 (555) 123-4567" className="h-12" />
+                  <Input 
+                    type="tel" 
+                    placeholder="+1 (555) 123-4567" 
+                    className="h-12" 
+                    value={formData.phone}
+                    onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                    required
+                  />
                 </div>
                 
                 <div>
                   <label className="block text-sm font-medium mb-2">Property Type</label>
-                  <select className="w-full h-12 px-3 rounded-lg border border-border bg-background">
-                    <option>Select property type</option>
-                    <option>Apartment</option>
-                    <option>House</option>
-                    <option>Office Space</option>
+                  <select 
+                    className="w-full h-12 px-3 rounded-lg border border-border bg-background"
+                    value={formData.propertyType}
+                    onChange={(e) => setFormData({...formData, propertyType: e.target.value})}
+                    required
+                  >
+                    <option value="">Select property type</option>
+                    <option>Office Renovation</option>
+                    <option>House Renovation</option>
+                    <option>Interior Design</option>
                     <option>Commercial Space</option>
                     <option>Other</option>
                   </select>
@@ -140,10 +198,13 @@ const Contact = () => {
                   <Textarea 
                     placeholder="Tell us about your requirements..."
                     className="min-h-32"
+                    value={formData.message}
+                    onChange={(e) => setFormData({...formData, message: e.target.value})}
+                    required
                   />
                 </div>
                 
-                <Button size="lg" className="w-full">
+                <Button size="lg" className="w-full" type="submit">
                   Send Message
                 </Button>
               </form>

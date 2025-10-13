@@ -1,7 +1,10 @@
 import { CheckCircle, Shield, Zap, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const WhyChooseUs = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="py-12 md:py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6">
@@ -35,7 +38,7 @@ const WhyChooseUs = () => {
               Award-winning design team creating innovative spaces that blend aesthetics with functionality. 
               From contemporary minimalism to luxury traditional, we bring your vision to life.
             </p>
-            <Button variant="outline" size="sm" className="group w-full sm:w-auto">
+            <Button variant="outline" size="sm" className="group w-full sm:w-auto" onClick={() => navigate('/about')}>
               Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
@@ -50,7 +53,7 @@ const WhyChooseUs = () => {
               Skilled craftsmen and premium materials ensuring superior quality execution. 
               Rigorous quality control and attention to detail in every project we undertake.
             </p>
-            <Button variant="outline" size="sm" className="border-white text-white hover:bg-white hover:text-primary group w-full sm:w-auto">
+            <Button variant="outline" size="sm" className="border-white text-white hover:bg-white hover:text-primary group w-full sm:w-auto" onClick={() => navigate('/portfolio')}>
               Explore <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
@@ -65,7 +68,7 @@ const WhyChooseUs = () => {
               Professional project management ensuring on-time completion within budget. 
               Regular updates and transparent communication throughout the renovation journey.
             </p>
-            <Button variant="outline" size="sm" className="group w-full sm:w-auto">
+            <Button variant="outline" size="sm" className="group w-full sm:w-auto" onClick={() => navigate('/contact')}>
               Get Started <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>

@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Home, Building, Store } from "lucide-react";
 import heroCharacter from "@/assets/hero-character.png";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="min-h-screen bg-background pt-24 md:pt-20 pb-16">
       <div className="container mx-auto px-4 sm:px-6">
@@ -32,7 +35,7 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              <Button variant="portfolio" size="lg" className="w-full sm:w-fit">
+              <Button variant="portfolio" size="lg" className="w-full sm:w-fit" onClick={() => navigate('/portfolio')}>
                 View Our Portfolio <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </div>

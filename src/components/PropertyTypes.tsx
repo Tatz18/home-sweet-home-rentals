@@ -4,8 +4,11 @@ import officeSpace from "@/assets/office-space.jpg";
 import apartment from "@/assets/apartment.jpg";
 import commercialSpace from "@/assets/commercial-space.jpg";
 import house from "@/assets/house.jpg";
+import { useNavigate } from "react-router-dom";
 
 const PropertyTypes = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="py-12 md:py-20 bg-secondary/30">
       <div className="container mx-auto px-4 sm:px-6">
@@ -22,7 +25,7 @@ const PropertyTypes = () => {
             </p>
           </div>
           <div className="lg:col-span-4 flex items-end justify-start lg:justify-end">
-            <Button variant="portfolio" size="lg" className="w-full sm:w-auto">
+            <Button variant="portfolio" size="lg" className="w-full sm:w-auto" onClick={() => navigate('/portfolio')}>
               View All Projects <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </div>
@@ -59,7 +62,7 @@ const PropertyTypes = () => {
                   <Calendar className="w-3 h-3 md:w-4 md:h-4" />
                   <span className="text-xs md:text-sm">Quick Turnaround</span>
                 </div>
-                <Button variant="outline" size="sm" className="group w-full sm:w-auto">
+                <Button variant="outline" size="sm" className="group w-full sm:w-auto" onClick={() => navigate('/portfolio')}>
                   Explore <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </div>
@@ -84,7 +87,7 @@ const PropertyTypes = () => {
                   <p className="text-muted-foreground text-xs md:text-sm mb-3 md:mb-4">
                     Heritage restorations, villa makeovers, and complete home transformations with modern amenities.
                   </p>
-                  <Button variant="link" className="p-0 h-auto group">
+                  <Button variant="link" className="p-0 h-auto group" onClick={() => navigate('/portfolio')}>
                     View Projects <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </div>
@@ -106,7 +109,7 @@ const PropertyTypes = () => {
                   <p className="text-white/90 text-xs md:text-sm mb-3 md:mb-4">
                     Luxury home interiors, apartment design, and custom furniture for contemporary living spaces.
                   </p>
-                  <Button variant="link" className="p-0 h-auto text-white hover:text-white/80 group">
+                  <Button variant="link" className="p-0 h-auto text-white hover:text-white/80 group" onClick={() => navigate('/portfolio')}>
                     Discover More <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </div>
@@ -128,7 +131,7 @@ const PropertyTypes = () => {
                   <p className="text-muted-foreground text-xs md:text-sm mb-3 md:mb-4">
                     Modern office interiors, co-working spaces with flexible zones and biophilic design elements.
                   </p>
-                  <Button variant="link" className="p-0 h-auto group">
+                  <Button variant="link" className="p-0 h-auto group" onClick={() => navigate('/portfolio')}>
                     Browse Projects <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </div>

@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Users, FileText, Zap, Shield } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const ProcessSection = () => {
+  const navigate = useNavigate();
+  
   const steps = [
     {
       icon: <Users className="w-8 h-8 text-white" />,
@@ -42,7 +45,7 @@ const ProcessSection = () => {
           <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 md:mb-8">
             Streamlined design and renovation process ensuring quality, transparency, and your vision brought to life.
           </p>
-          <Button variant="portfolio" size="lg" className="w-full sm:w-auto">
+          <Button variant="portfolio" size="lg" className="w-full sm:w-auto" onClick={() => navigate('/contact')}>
             <Users className="w-5 h-5 mr-2" />
             Start Your Project
           </Button>
@@ -98,6 +101,7 @@ const ProcessSection = () => {
                     group/btn w-full
                     ${step.featured ? 'border-white text-white hover:bg-white hover:text-primary' : 'hover:bg-secondary'}
                   `}
+                  onClick={() => navigate('/about')}
                 >
                   Learn More 
                   <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
@@ -121,10 +125,10 @@ const ProcessSection = () => {
             Partner with Kolkata's leading renovation and interior design experts for exceptional results.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="portfolio" size="lg" className="w-full sm:w-auto">
+            <Button variant="portfolio" size="lg" className="w-full sm:w-auto" onClick={() => navigate('/portfolio')}>
               View Portfolio
             </Button>
-            <Button variant="outline" size="lg" className="w-full sm:w-auto">
+            <Button variant="outline" size="lg" className="w-full sm:w-auto" onClick={() => navigate('/contact')}>
               Schedule Consultation
             </Button>
           </div>

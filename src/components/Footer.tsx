@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
   return (
     <footer className="bg-background border-t border-border">
       <div className="container mx-auto px-4 sm:px-6 py-12 md:py-16">
@@ -37,16 +40,16 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-foreground mb-3 md:mb-4 text-sm md:text-base">Quick Links</h3>
             <div className="space-y-2 flex flex-col items-start">
-              <Button variant="link" className="p-0 h-auto text-xs md:text-sm text-muted-foreground hover:text-primary">
+              <Button variant="link" className="p-0 h-auto text-xs md:text-sm text-muted-foreground hover:text-primary" onClick={() => navigate('/about')}>
                 About Us
               </Button>
-              <Button variant="link" className="p-0 h-auto text-xs md:text-sm text-muted-foreground hover:text-primary">
+              <Button variant="link" className="p-0 h-auto text-xs md:text-sm text-muted-foreground hover:text-primary" onClick={() => navigate('/portfolio')}>
                 Properties
               </Button>
-              <Button variant="link" className="p-0 h-auto text-xs md:text-sm text-muted-foreground hover:text-primary">
+              <Button variant="link" className="p-0 h-auto text-xs md:text-sm text-muted-foreground hover:text-primary" onClick={() => navigate('/portfolio')}>
                 Services
               </Button>
-              <Button variant="link" className="p-0 h-auto text-xs md:text-sm text-muted-foreground hover:text-primary">
+              <Button variant="link" className="p-0 h-auto text-xs md:text-sm text-muted-foreground hover:text-primary" onClick={() => navigate('/contact')}>
                 Contact
               </Button>
             </div>
@@ -56,17 +59,17 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-foreground mb-3 md:mb-4 text-sm md:text-base">Services</h3>
             <div className="space-y-2 flex flex-col items-start">
-              <Button variant="link" className="p-0 h-auto text-xs md:text-sm text-muted-foreground hover:text-primary">
-                Office Rentals
+              <Button variant="link" className="p-0 h-auto text-xs md:text-sm text-muted-foreground hover:text-primary" onClick={() => navigate('/portfolio')}>
+                Office Renovation
               </Button>
-              <Button variant="link" className="p-0 h-auto text-xs md:text-sm text-muted-foreground hover:text-primary">
-                Residential Rentals
+              <Button variant="link" className="p-0 h-auto text-xs md:text-sm text-muted-foreground hover:text-primary" onClick={() => navigate('/portfolio')}>
+                House Renovation
               </Button>
-              <Button variant="link" className="p-0 h-auto text-xs md:text-sm text-muted-foreground hover:text-primary">
-                Commercial Spaces
+              <Button variant="link" className="p-0 h-auto text-xs md:text-sm text-muted-foreground hover:text-primary" onClick={() => navigate('/portfolio')}>
+                Interior Design
               </Button>
-              <Button variant="link" className="p-0 h-auto text-xs md:text-sm text-muted-foreground hover:text-primary">
-                Property Management
+              <Button variant="link" className="p-0 h-auto text-xs md:text-sm text-muted-foreground hover:text-primary" onClick={() => navigate('/contact')}>
+                Consultation
               </Button>
             </div>
           </div>
